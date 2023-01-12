@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Monday CRM Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+[Project summary](#project-summary)
+[Technologies](#technologies)
 
-In the project directory, you can run:
+## Project summary
 
-### `yarn start`
+This project is a clone of a Monday-style CRM based on Ania Kubów's [tutorial](https://www.youtube.com/watch?v=DDh2GoiCrCk).
+Users of this app should be able to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Create a ticket with data such as title, description, priority, status, progress, and category
+- View a dashboard containing a list of tickets and see each ticket's data at a glance
+- View, edit and delete individual tickets
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I changed my approach on a few things that Ania does in the original tutorial.
 
-### `yarn test`
+- I extracted the TicketForm as its own component rather than including it as part of TicketPage.
+- I used Formik to create the TicketForm and extract the form fields as components so that they could be generated dynamically. To handle validation, I used Yup and created a validation schema for the form.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Current to-dos:
 
-### `yarn build`
+- Finish the TicketForm component
+- Connect app to Webstax database
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Create React App](https://github.com/facebook/create-react-app)
+- [TailwindCSS](https://github.com/tailwindlabs/tailwindcss)
+- [Tailwind Forms](https://github.com/tailwindlabs/tailwindcss-forms)
+- [Formik](https://github.com/jaredpalmer/formik)
+- [Yup](https://github.com/jquense/yup)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
