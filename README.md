@@ -3,6 +3,7 @@
 ## Table of Contents
 
 [Project summary](#project-summary)
+
 [Technologies](#technologies)
 
 ## Project summary
